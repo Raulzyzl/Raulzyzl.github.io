@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>深圳信息职业技术学院</title>
+</head>
+<style>
+#nav {
+    margin:0px auto;    /*初始化这个div*/
+    text-align:center;	/*将此div内的文字设置为居中*/
+	width:100%;			/*宽度百分百*/
+	
+}
+#nav ul {
+	list-style-type:none;			/*将ul的标记取消（删除ul中的圆点）*/
+	
+	background: #0066CC;			/*ul背景颜色设置*/
+    padding:0 5px;					/*上下内边距为0 左右内边距为5*/
+    display:inline-table;			/*生成框的样式为内联表格*/
+    position:relative;  			/*相对定位*/
+    
+	
+}
+#nav ul ul {
+    display:none;		/*此元素不会被显示*/
+	
+}
+#nav ul li {
+    float:left; 		/*元素向左浮动*/
+	
+}
+#nav ul::after {
+    
+    display:block;		/*显示为块级元素*/
+    clear:both;			/*左右不允许浮动元素*/
+	
+}
+#nav ul li a {
+    display:block;		/**/
+    padding:10px 35px;	/**/
+    color:#ffffff;		/*文字颜色*/
+    text-decoration:none;	/*默认标准的文本*/
+
+}
+#nav ul li:hover > ul {
+    display:block;		/**/
+}
+
+#nav ul li:hover {
+    background:#ffffff;	/**/
+}
+#nav ul li:hover a {
+    color:#000000;	/**/
+	
+}
+#nav ul ul {
+	width:100%;		/*宽度百分百*/
+	left:0;			/*向左偏移0px*/
+	opacity:0.8;	/*透明度设置为0.8*/
+    background:#ffffff;	/**/
+    border-radius:0;	/*设置圆角边框*/
+    position:absolute;	/*绝对定位*/
+    top:100%;		/*向上偏移100%（相对于上一级ul）*/
+    padding:0;		/**/
+}
+#nav ul ul li {
+    float:none;		/*设置元素不浮动*/
+	padding-top:5px;	/*设置上内边距*/
+	padding-bottom:5px;	/*设置下内边距*/
+    border-top:0px solid #6b727c;	/*设置上边框的样式*/
+    border-bottom:0px solid #575f6a;/*设置下边框的样式*/
+	
+}
+#nav ul ul li a {
+    color:#FFF;		/**/
+}   
+#nav ul ul li a:hover {
+    background:#4b545f;	/**/
+}
+
+</style>
+<body>
+	<div>
+		<img src="../img/img01.jpg">
+	</div>
+	<div>
+		<div id="nav">
+			<ul>
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="#">学校概况</a>
+					<ul>
+						<li>学校简介</li>
+						<li>学校领导</li>
+						<li>历任领导</li>
+						<li>大事记</li>
+						<li>学校风光</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">招生就业</a>
+					<ul>
+						<li>招生信息</li>
+						<li>就业信息</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">组织机构</a>
+					<ul>
+						<li>党群机构·</li>
+						<li>行政机构·</li>
+						<li>教学系统</li>
+						<li>科研机构</li>
+						<li>教辅机构</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">二级学院</a>
+					<ul>
+						<li>软件学院</li>
+						<li>电子与通信学院</li>
+						<li>计算机学院</li>
+						<li>数字媒体学院</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">教学管理</a>
+				</li>
+				<li>
+					<a href="#">学生工作</a>
+				</li>
+				<li>
+					<a href="#">科学研究</a>
+				</li>
+				<li>
+					<a href="#">合作交流</a>
+					<ul>
+						<li>国际交流与合作</li>
+						<li>国内交流与合作</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">信息服务</a>
+				</li>
+			</ul>
+		</div>	
+	</div>
+	<div>
+		<img src="../img/img02.jpg" style="width:99%">
+	</div>
+	
+</body>
+</html>
